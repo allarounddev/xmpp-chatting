@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		902D4DC019E703BC7A00B5F8 /* Pods_XMPP_Chatting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89FB603941308DB778385859 /* Pods_XMPP_Chatting.framework */; };
+		9B3676E71C88768E00F69A66 /* ImageResizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3676E61C88768E00F69A66 /* ImageResizer.swift */; };
+		9B3676EA1C88918300F69A66 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3676E91C88918300F69A66 /* APIManager.swift */; };
+		9B3676EC1C88919500F69A66 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3676EB1C88919500F69A66 /* APIConstants.swift */; };
+		9B9870041C83261600747F94 /* OneChats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9870031C83261600747F94 /* OneChats.swift */; };
+		9BFB3C781C849C2700F88C47 /* AddBuddyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFB3C771C849C2700F88C47 /* AddBuddyViewController.swift */; };
+		EA1E268E1C8589EF00A66747 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA1E268D1C8589EF00A66747 /* LoginViewController.xib */; };
+		EA3C0D371C800131005831F8 /* OneChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D301C800131005831F8 /* OneChat.swift */; };
+		EA3C0D391C800131005831F8 /* OneLastActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D321C800131005831F8 /* OneLastActivity.swift */; };
+		EA3C0D3A1C800131005831F8 /* OneMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D331C800131005831F8 /* OneMessage.swift */; };
+		EA3C0D3B1C800131005831F8 /* OnePresence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D341C800131005831F8 /* OnePresence.swift */; };
+		EA3C0D3C1C800131005831F8 /* OneRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D351C800131005831F8 /* OneRoom.swift */; };
+		EA3C0D3D1C800131005831F8 /* OneRoster.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D361C800131005831F8 /* OneRoster.swift */; };
+		EA3C0D451C80242F005831F8 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D441C80242F005831F8 /* ContactViewController.swift */; };
+		EA3C0D541C804827005831F8 /* ChatItemsDemoDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D4D1C804827005831F8 /* ChatItemsDemoDecorator.swift */; };
+		EA3C0D561C804827005831F8 /* AppDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D4F1C804827005831F8 /* AppDataSource.swift */; };
+		EA3C0D571C804827005831F8 /* AppMessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D501C804827005831F8 /* AppMessageSender.swift */; };
+		EA3C0D581C804827005831F8 /* AppPhotoMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D511C804827005831F8 /* AppPhotoMessageViewModel.swift */; };
+		EA3C0D5A1C804827005831F8 /* UserActionHandlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D531C804827005831F8 /* UserActionHandlers.swift */; };
+		EA3C0D601C804849005831F8 /* SendingStatusCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D5D1C804849005831F8 /* SendingStatusCollectionViewCell.swift */; };
+		EA3C0D611C804849005831F8 /* SendingStatusCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EA3C0D5E1C804849005831F8 /* SendingStatusCollectionViewCell.xib */; };
+		EA3C0D621C804849005831F8 /* SendingStatusPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D5F1C804849005831F8 /* SendingStatusPresenter.swift */; };
+		EA3C0D641C804851005831F8 /* AppMessageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3C0D631C804851005831F8 /* AppMessageFactory.swift */; };
+		EA4D53231C7EE39F006CA7BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4D53211C7EE39F006CA7BA /* Main.storyboard */; };
+		EA4D53251C7EE39F006CA7BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA4D53241C7EE39F006CA7BA /* Assets.xcassets */; };
+		EA4D53281C7EE39F006CA7BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA4D53261C7EE39F006CA7BA /* LaunchScreen.storyboard */; };
+		EA4D53311C7EE433006CA7BA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D53301C7EE433006CA7BA /* AppDelegate.swift */; };
+		EA4D53361C7EEC7F006CA7BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D53351C7EEC7F006CA7BA /* LoginViewController.swift */; };
+		EA4D533A1C7EEED8006CA7BA /* LoginHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D53391C7EEED8006CA7BA /* LoginHandler.swift */; };
+		EA4D533C1C7EF0C8006CA7BA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D533B1C7EF0C8006CA7BA /* AppConstants.swift */; };
+		EA4D533E1C7EF0E9006CA7BA /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D533D1C7EF0E9006CA7BA /* UIConstants.swift */; };
+		EA4D53411C7EF13F006CA7BA /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D53401C7EF13F006CA7BA /* BaseViewController.swift */; };
+		EA4D53441C7EF53F006CA7BA /* MainChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D53431C7EF53F006CA7BA /* MainChatViewController.swift */; };
+		EA4D53481C7EFD45006CA7BA /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4D53471C7EFD45006CA7BA /* Utility.swift */; };
+		EA5D220D1C8426E60053486A /* UploadImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5D220C1C8426E60053486A /* UploadImageService.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FA99075BAD76DC4B2DE9FC9 /* Pods-XMPP Chatting.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP Chatting.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP Chatting/Pods-XMPP Chatting.debug.xcconfig"; sourceTree = "<group>"; };
+		696CECA4BF5BCC263AABE232 /* Pods-XMPP Chatting.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XMPP Chatting.release.xcconfig"; path = "Pods/Target Support Files/Pods-XMPP Chatting/Pods-XMPP Chatting.release.xcconfig"; sourceTree = "<group>"; };
+		89FB603941308DB778385859 /* Pods_XMPP_Chatting.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XMPP_Chatting.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B3676E61C88768E00F69A66 /* ImageResizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResizer.swift; sourceTree = "<group>"; };
+		9B3676E91C88918300F69A66 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9B3676EB1C88919500F69A66 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		9B4873421C93AEB20045C090 /* XMPP Chatting-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMPP Chatting-Bridging-Header.h"; sourceTree = "<group>"; };
+		9B9870031C83261600747F94 /* OneChats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChats.swift; sourceTree = "<group>"; };
+		9BFB3C771C849C2700F88C47 /* AddBuddyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBuddyViewController.swift; sourceTree = "<group>"; };
+		A77179B4792231B35865F94D /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA1E268D1C8589EF00A66747 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		EA3C0D301C800131005831F8 /* OneChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneChat.swift; sourceTree = "<group>"; };
+		EA3C0D321C800131005831F8 /* OneLastActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneLastActivity.swift; sourceTree = "<group>"; };
+		EA3C0D331C800131005831F8 /* OneMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneMessage.swift; sourceTree = "<group>"; };
+		EA3C0D341C800131005831F8 /* OnePresence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnePresence.swift; sourceTree = "<group>"; };
+		EA3C0D351C800131005831F8 /* OneRoom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRoom.swift; sourceTree = "<group>"; };
+		EA3C0D361C800131005831F8 /* OneRoster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneRoster.swift; sourceTree = "<group>"; };
+		EA3C0D441C80242F005831F8 /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		EA3C0D4D1C804827005831F8 /* ChatItemsDemoDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatItemsDemoDecorator.swift; sourceTree = "<group>"; };
+		EA3C0D4F1C804827005831F8 /* AppDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDataSource.swift; sourceTree = "<group>"; };
+		EA3C0D501C804827005831F8 /* AppMessageSender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMessageSender.swift; sourceTree = "<group>"; };
+		EA3C0D511C804827005831F8 /* AppPhotoMessageViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppPhotoMessageViewModel.swift; sourceTree = "<group>"; };
+		EA3C0D531C804827005831F8 /* UserActionHandlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserActionHandlers.swift; sourceTree = "<group>"; };
+		EA3C0D5D1C804849005831F8 /* SendingStatusCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingStatusCollectionViewCell.swift; sourceTree = "<group>"; };
+		EA3C0D5E1C804849005831F8 /* SendingStatusCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendingStatusCollectionViewCell.xib; sourceTree = "<group>"; };
+		EA3C0D5F1C804849005831F8 /* SendingStatusPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendingStatusPresenter.swift; sourceTree = "<group>"; };
+		EA3C0D631C804851005831F8 /* AppMessageFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppMessageFactory.swift; sourceTree = "<group>"; };
+		EA4D531A1C7EE39F006CA7BA /* XMPP Chatting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "XMPP Chatting.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4D53221C7EE39F006CA7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA4D53241C7EE39F006CA7BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA4D53271C7EE39F006CA7BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA4D53291C7EE39F006CA7BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA4D53301C7EE433006CA7BA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA4D53351C7EEC7F006CA7BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA4D53391C7EEED8006CA7BA /* LoginHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHandler.swift; sourceTree = "<group>"; };
+		EA4D533B1C7EF0C8006CA7BA /* AppConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		EA4D533D1C7EF0E9006CA7BA /* UIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		EA4D53401C7EF13F006CA7BA /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EA4D53431C7EF53F006CA7BA /* MainChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainChatViewController.swift; sourceTree = "<group>"; };
+		EA4D53471C7EFD45006CA7BA /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		EA5D220C1C8426E60053486A /* UploadImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UploadImageService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA4D53171C7EE39F006CA7BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				902D4DC019E703BC7A00B5F8 /* Pods_XMPP_Chatting.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B799A374E6A0CCCEAD5B091 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2FA99075BAD76DC4B2DE9FC9 /* Pods-XMPP Chatting.debug.xcconfig */,
+				696CECA4BF5BCC263AABE232 /* Pods-XMPP Chatting.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B3676E81C88916E00F69A66 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				9B3676E91C88918300F69A66 /* APIManager.swift */,
+				9B3676EB1C88919500F69A66 /* APIConstants.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		9BFB3C761C849C1D00F88C47 /* AddBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB3C771C849C2700F88C47 /* AddBuddyViewController.swift */,
+			);
+			path = AddBuddy;
+			sourceTree = "<group>";
+		};
+		A39EE728A58CA22A7DF3C7B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A77179B4792231B35865F94D /* Pods.framework */,
+				89FB603941308DB778385859 /* Pods_XMPP_Chatting.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA3C0D2F1C80011A005831F8 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				9B9870031C83261600747F94 /* OneChats.swift */,
+				EA3C0D301C800131005831F8 /* OneChat.swift */,
+				EA3C0D321C800131005831F8 /* OneLastActivity.swift */,
+				EA3C0D331C800131005831F8 /* OneMessage.swift */,
+				EA3C0D341C800131005831F8 /* OnePresence.swift */,
+				EA3C0D351C800131005831F8 /* OneRoom.swift */,
+				EA3C0D361C800131005831F8 /* OneRoster.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		EA3C0D431C80241F005831F8 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C0D441C80242F005831F8 /* ContactViewController.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		EA3C0D4C1C804806005831F8 /* ChatService */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C0D631C804851005831F8 /* AppMessageFactory.swift */,
+				EA3C0D5B1C80483E005831F8 /* CustomItems */,
+				EA3C0D4D1C804827005831F8 /* ChatItemsDemoDecorator.swift */,
+				EA3C0D4F1C804827005831F8 /* AppDataSource.swift */,
+				EA3C0D501C804827005831F8 /* AppMessageSender.swift */,
+				EA3C0D511C804827005831F8 /* AppPhotoMessageViewModel.swift */,
+				EA3C0D531C804827005831F8 /* UserActionHandlers.swift */,
+			);
+			path = ChatService;
+			sourceTree = "<group>";
+		};
+		EA3C0D5B1C80483E005831F8 /* CustomItems */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C0D5C1C804849005831F8 /* Sending status */,
+			);
+			path = CustomItems;
+			sourceTree = "<group>";
+		};
+		EA3C0D5C1C804849005831F8 /* Sending status */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C0D5D1C804849005831F8 /* SendingStatusCollectionViewCell.swift */,
+				EA3C0D5E1C804849005831F8 /* SendingStatusCollectionViewCell.xib */,
+				EA3C0D5F1C804849005831F8 /* SendingStatusPresenter.swift */,
+			);
+			path = "Sending status";
+			sourceTree = "<group>";
+		};
+		EA4D53111C7EE39F006CA7BA = {
+			isa = PBXGroup;
+			children = (
+				EA4D531C1C7EE39F006CA7BA /* XMPP Chatting */,
+				EA4D531B1C7EE39F006CA7BA /* Products */,
+				A39EE728A58CA22A7DF3C7B6 /* Frameworks */,
+				3B799A374E6A0CCCEAD5B091 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EA4D531B1C7EE39F006CA7BA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D531A1C7EE39F006CA7BA /* XMPP Chatting.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA4D531C1C7EE39F006CA7BA /* XMPP Chatting */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53451C7EFD35006CA7BA /* Libs */,
+				EA4D53371C7EEEC1006CA7BA /* Model */,
+				EA4D53321C7EEC55006CA7BA /* UI */,
+				EA4D532F1C7EE422006CA7BA /* Application */,
+				EA4D53211C7EE39F006CA7BA /* Main.storyboard */,
+				EA4D53241C7EE39F006CA7BA /* Assets.xcassets */,
+				EA4D53261C7EE39F006CA7BA /* LaunchScreen.storyboard */,
+				EA4D53291C7EE39F006CA7BA /* Info.plist */,
+				9B4873421C93AEB20045C090 /* XMPP Chatting-Bridging-Header.h */,
+			);
+			path = "XMPP Chatting";
+			sourceTree = "<group>";
+		};
+		EA4D532F1C7EE422006CA7BA /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53301C7EE433006CA7BA /* AppDelegate.swift */,
+				EA4D533B1C7EF0C8006CA7BA /* AppConstants.swift */,
+				EA4D533D1C7EF0E9006CA7BA /* UIConstants.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		EA4D53321C7EEC55006CA7BA /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53331C7EEC5E006CA7BA /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		EA4D53331C7EEC5E006CA7BA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9BFB3C761C849C1D00F88C47 /* AddBuddy */,
+				EA3C0D431C80241F005831F8 /* Contact */,
+				EA4D53421C7EF1EC006CA7BA /* Chat */,
+				EA4D533F1C7EF127006CA7BA /* Base */,
+				EA4D53341C7EEC65006CA7BA /* Login */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EA4D53341C7EEC65006CA7BA /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53351C7EEC7F006CA7BA /* LoginViewController.swift */,
+				EA1E268D1C8589EF00A66747 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		EA4D53371C7EEEC1006CA7BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9B3676E81C88916E00F69A66 /* API */,
+				EA3C0D4C1C804806005831F8 /* ChatService */,
+				EA4D53381C7EEECA006CA7BA /* Handler */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA4D53381C7EEECA006CA7BA /* Handler */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53391C7EEED8006CA7BA /* LoginHandler.swift */,
+				EA5D220C1C8426E60053486A /* UploadImageService.swift */,
+			);
+			path = Handler;
+			sourceTree = "<group>";
+		};
+		EA4D533F1C7EF127006CA7BA /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53401C7EF13F006CA7BA /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		EA4D53421C7EF1EC006CA7BA /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53431C7EF53F006CA7BA /* MainChatViewController.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		EA4D53451C7EFD35006CA7BA /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				EA3C0D2F1C80011A005831F8 /* Chat */,
+				EA4D53461C7EFD3B006CA7BA /* Utils */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		EA4D53461C7EFD3B006CA7BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA4D53471C7EFD45006CA7BA /* Utility.swift */,
+				9B3676E61C88768E00F69A66 /* ImageResizer.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA4D53191C7EE39F006CA7BA /* XMPP Chatting */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA4D532C1C7EE39F006CA7BA /* Build configuration list for PBXNativeTarget "XMPP Chatting" */;
+			buildPhases = (
+				CCF5C158558C6EE72593C438 /* Check Pods Manifest.lock */,
+				EA4D53161C7EE39F006CA7BA /* Sources */,
+				EA4D53171C7EE39F006CA7BA /* Frameworks */,
+				EA4D53181C7EE39F006CA7BA /* Resources */,
+				84764C1BA2BD3364176F6D40 /* Embed Pods Frameworks */,
+				1A9C07EE2B7BEBD029A353C1 /* Copy Pods Resources */,
+				9B3E2B771C8B320900F92EF4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "XMPP Chatting";
+			productName = "XMPP Chatting";
+			productReference = EA4D531A1C7EE39F006CA7BA /* XMPP Chatting.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA4D53121C7EE39F006CA7BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = tutacode;
+				TargetAttributes = {
+					EA4D53191C7EE39F006CA7BA = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = EA4D53151C7EE39F006CA7BA /* Build configuration list for PBXProject "XMPP Chatting" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA4D53111C7EE39F006CA7BA;
+			productRefGroup = EA4D531B1C7EE39F006CA7BA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA4D53191C7EE39F006CA7BA /* XMPP Chatting */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA4D53181C7EE39F006CA7BA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA1E268E1C8589EF00A66747 /* LoginViewController.xib in Resources */,
+				EA3C0D611C804849005831F8 /* SendingStatusCollectionViewCell.xib in Resources */,
+				EA4D53281C7EE39F006CA7BA /* LaunchScreen.storyboard in Resources */,
+				EA4D53251C7EE39F006CA7BA /* Assets.xcassets in Resources */,
+				EA4D53231C7EE39F006CA7BA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A9C07EE2B7BEBD029A353C1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP Chatting/Pods-XMPP Chatting-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84764C1BA2BD3364176F6D40 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XMPP Chatting/Pods-XMPP Chatting-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B3E2B771C8B320900F92EF4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 2a439e3cf88ea1b23be9c7e84f0058522fc4f020 1042a572848515380a4a7804c52b7f3754148ff1fe24b350ebffea39976c2bb6";
+		};
+		CCF5C158558C6EE72593C438 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA4D53161C7EE39F006CA7BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA4D533A1C7EEED8006CA7BA /* LoginHandler.swift in Sources */,
+				EA3C0D561C804827005831F8 /* AppDataSource.swift in Sources */,
+				EA3C0D601C804849005831F8 /* SendingStatusCollectionViewCell.swift in Sources */,
+				EA3C0D581C804827005831F8 /* AppPhotoMessageViewModel.swift in Sources */,
+				EA4D53361C7EEC7F006CA7BA /* LoginViewController.swift in Sources */,
+				EA3C0D3B1C800131005831F8 /* OnePresence.swift in Sources */,
+				EA3C0D451C80242F005831F8 /* ContactViewController.swift in Sources */,
+				9B3676EC1C88919500F69A66 /* APIConstants.swift in Sources */,
+				9B3676E71C88768E00F69A66 /* ImageResizer.swift in Sources */,
+				EA3C0D621C804849005831F8 /* SendingStatusPresenter.swift in Sources */,
+				EA3C0D541C804827005831F8 /* ChatItemsDemoDecorator.swift in Sources */,
+				EA3C0D391C800131005831F8 /* OneLastActivity.swift in Sources */,
+				EA4D533E1C7EF0E9006CA7BA /* UIConstants.swift in Sources */,
+				EA3C0D371C800131005831F8 /* OneChat.swift in Sources */,
+				EA3C0D5A1C804827005831F8 /* UserActionHandlers.swift in Sources */,
+				EA4D53311C7EE433006CA7BA /* AppDelegate.swift in Sources */,
+				EA3C0D3C1C800131005831F8 /* OneRoom.swift in Sources */,
+				EA4D53481C7EFD45006CA7BA /* Utility.swift in Sources */,
+				EA3C0D3D1C800131005831F8 /* OneRoster.swift in Sources */,
+				EA4D533C1C7EF0C8006CA7BA /* AppConstants.swift in Sources */,
+				EA3C0D641C804851005831F8 /* AppMessageFactory.swift in Sources */,
+				9B3676EA1C88918300F69A66 /* APIManager.swift in Sources */,
+				EA5D220D1C8426E60053486A /* UploadImageService.swift in Sources */,
+				EA3C0D3A1C800131005831F8 /* OneMessage.swift in Sources */,
+				9BFB3C781C849C2700F88C47 /* AddBuddyViewController.swift in Sources */,
+				EA4D53441C7EF53F006CA7BA /* MainChatViewController.swift in Sources */,
+				EA4D53411C7EF13F006CA7BA /* BaseViewController.swift in Sources */,
+				9B9870041C83261600747F94 /* OneChats.swift in Sources */,
+				EA3C0D571C804827005831F8 /* AppMessageSender.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EA4D53211C7EE39F006CA7BA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA4D53221C7EE39F006CA7BA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA4D53261C7EE39F006CA7BA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA4D53271C7EE39F006CA7BA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA4D532A1C7EE39F006CA7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA4D532B1C7EE39F006CA7BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA4D532D1C7EE39F006CA7BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FA99075BAD76DC4B2DE9FC9 /* Pods-XMPP Chatting.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = "XMPP Chatting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pathoz.touchstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMPP Chatting/XMPP Chatting-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA4D532E1C7EE39F006CA7BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 696CECA4BF5BCC263AABE232 /* Pods-XMPP Chatting.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: quang pham (D7KC55PX44)";
+				INFOPLIST_FILE = "XMPP Chatting/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pathoz.touchstone;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "eab08bdd-1708-4e38-b908-7a0028b9165a";
+				SWIFT_OBJC_BRIDGING_HEADER = "XMPP Chatting/XMPP Chatting-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA4D53151C7EE39F006CA7BA /* Build configuration list for PBXProject "XMPP Chatting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4D532A1C7EE39F006CA7BA /* Debug */,
+				EA4D532B1C7EE39F006CA7BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA4D532C1C7EE39F006CA7BA /* Build configuration list for PBXNativeTarget "XMPP Chatting" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA4D532D1C7EE39F006CA7BA /* Debug */,
+				EA4D532E1C7EE39F006CA7BA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA4D53121C7EE39F006CA7BA /* Project object */;
+}

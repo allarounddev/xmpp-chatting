@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I2l-oa-b5J">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ZwK-SB-c5V">
+            <objects>
+                <navigationController id="I2l-oa-b5J" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vVI-Dn-nhM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="U3O-rN-cPd" kind="relationship" relationship="rootViewController" id="Flr-dg-4wi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WWX-Qz-9Yt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288" y="453"/>
+        </scene>
+        <!--Contact View Controller-->
+        <scene sceneID="Ig4-jz-cjt">
+            <objects>
+                <viewController storyboardIdentifier="ContactViewController" id="U3O-rN-cPd" customClass="ContactViewController" customModule="XMPP_Chatting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fQD-SS-DeY"/>
+                        <viewControllerLayoutGuide type="bottom" id="jn6-ma-JSq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TsL-Tl-382">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t83-yH-bek">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="U3O-rN-cPd" id="I4j-ID-NXU"/>
+                                    <outlet property="delegate" destination="U3O-rN-cPd" id="C5u-lt-YUF"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jn6-ma-JSq" firstAttribute="top" secondItem="t83-yH-bek" secondAttribute="bottom" id="3o9-oF-pMm"/>
+                            <constraint firstItem="t83-yH-bek" firstAttribute="top" secondItem="fQD-SS-DeY" secondAttribute="bottom" id="6QG-lg-NLR"/>
+                            <constraint firstAttribute="trailing" secondItem="t83-yH-bek" secondAttribute="trailing" id="G16-XX-ahE"/>
+                            <constraint firstItem="t83-yH-bek" firstAttribute="leading" secondItem="TsL-Tl-382" secondAttribute="leading" id="Tsu-V1-p8v"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="DoN-Ui-isI"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableView" destination="t83-yH-bek" id="4hN-yn-JjP"/>
+                        <segue destination="jAN-wz-KD3" kind="show" identifier="showChatView" id="zjr-3m-XA2"/>
+                        <segue destination="T7V-uE-cnA" kind="show" identifier="addBuddySegue" id="oeA-JH-vkL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQH-Oy-C10" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="453"/>
+        </scene>
+        <!--Add Buddy View Controller-->
+        <scene sceneID="pYY-O0-lm9">
+            <objects>
+                <viewController id="T7V-uE-cnA" customClass="AddBuddyViewController" customModule="XMPP_Chatting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h4g-V5-TP5"/>
+                        <viewControllerLayoutGuide type="bottom" id="DgH-dR-SvE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aTV-PV-QMz">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Your friend chat ID" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="waj-AR-ZXk">
+                                <rect key="frame" x="0.0" y="130" width="320" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="BfB-XV-UeK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="search"/>
+                                <connections>
+                                    <outlet property="delegate" destination="T7V-uE-cnA" id="xDf-i7-i3h"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your chat Id is:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WUu-SN-XLO">
+                                <rect key="frame" x="20" y="8" width="280" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="jSz-o2-Z6j"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lv4-0K-RVz">
+                                <rect key="frame" x="20" y="37" width="280" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="i8g-Zt-nbH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your friend can reach you by entering your chat Id in textfield below" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2s-Le-1gG">
+                                <rect key="frame" x="20" y="75" width="280" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="eq6-g5-J7S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lv4-0K-RVz" secondAttribute="trailing" constant="20" id="5JK-XG-KLe"/>
+                            <constraint firstAttribute="trailing" secondItem="C2s-Le-1gG" secondAttribute="trailing" constant="20" id="Eu1-bO-zWb"/>
+                            <constraint firstItem="lv4-0K-RVz" firstAttribute="top" secondItem="WUu-SN-XLO" secondAttribute="bottom" constant="8" id="RnP-nh-VIh"/>
+                            <constraint firstAttribute="trailing" secondItem="waj-AR-ZXk" secondAttribute="trailing" id="UZh-vk-9yy"/>
+                            <constraint firstItem="WUu-SN-XLO" firstAttribute="top" secondItem="h4g-V5-TP5" secondAttribute="bottom" constant="8" id="W9d-JI-13n"/>
+                            <constraint firstItem="waj-AR-ZXk" firstAttribute="top" secondItem="C2s-Le-1gG" secondAttribute="bottom" constant="8" id="Xja-VM-1de"/>
+                            <constraint firstItem="lv4-0K-RVz" firstAttribute="leading" secondItem="aTV-PV-QMz" secondAttribute="leading" constant="20" id="aEL-Si-gAR"/>
+                            <constraint firstItem="WUu-SN-XLO" firstAttribute="leading" secondItem="aTV-PV-QMz" secondAttribute="leading" constant="20" id="aTh-PU-6tx"/>
+                            <constraint firstItem="C2s-Le-1gG" firstAttribute="top" secondItem="lv4-0K-RVz" secondAttribute="bottom" constant="8" id="bwV-mG-9Gt"/>
+                            <constraint firstItem="waj-AR-ZXk" firstAttribute="leading" secondItem="aTV-PV-QMz" secondAttribute="leading" id="ewe-Hc-b9N"/>
+                            <constraint firstItem="C2s-Le-1gG" firstAttribute="leading" secondItem="aTV-PV-QMz" secondAttribute="leading" constant="20" id="u2h-IL-yzk"/>
+                            <constraint firstAttribute="trailing" secondItem="WUu-SN-XLO" secondAttribute="trailing" constant="20" id="xL9-Lg-FAp"/>
+                        </constraints>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="chatIdLabel" destination="lv4-0K-RVz" id="Lhk-WK-7yM"/>
+                        <outlet property="textField" destination="waj-AR-ZXk" id="KpD-aP-YnV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIc-AI-amw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127" y="-234"/>
+        </scene>
+        <!--Main Chat View Controller-->
+        <scene sceneID="Xlg-UA-Uae">
+            <objects>
+                <viewController id="jAN-wz-KD3" customClass="MainChatViewController" customModule="XMPP_Chatting" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XG3-xd-CEw"/>
+                        <viewControllerLayoutGuide type="bottom" id="CWK-Bj-klF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pCG-V9-guJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TLc-xR-8J4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544" y="453"/>
+        </scene>
+    </scenes>
+</document>

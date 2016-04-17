@@ -1,0 +1,11 @@
+CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO
+CONFIGURATION_BUILD_DIR = $PODS_SHARED_BUILD_DIR/KissXML
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/GoogleAppUtilities" "${PODS_ROOT}/Headers/Public/GoogleAuthUtilities" "${PODS_ROOT}/Headers/Public/GoogleIdentityToolkit" "${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities" "${PODS_ROOT}/Headers/Public/GoogleParsingUtilities" "${PODS_ROOT}/Headers/Public/GoogleSignIn" "${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities" "${PODS_ROOT}/Headers/Public/GoogleUtilities" "${PODS_ROOT}/Headers/Public/TwitterCore" "${PODS_ROOT}/Headers/Public/TwitterKit" $(SDKROOT)/usr/include/libxml2 $(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/KissXML/libxml "$(PODS_ROOT)/../../../libxml"
+OTHER_CFLAGS = $(inherited) -DDDXML_LIBXML_MODULE_ENABLED=1
+OTHER_LDFLAGS = -l"xml2"
+OTHER_SWIFT_FLAGS = $(inherited) -DDDXML_LIBXML_MODULE_ENABLED $(inherited) "-D" "COCOAPODS"
+PODS_ROOT = ${SRCROOT}
+PODS_SHARED_BUILD_DIR = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES

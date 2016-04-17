@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="XMPP_Chatting" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="koZ-l1-F6s"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7jT-XI-lnZ">
+                    <rect key="frame" x="40" y="40" width="240" height="45"/>
+                    <color key="backgroundColor" red="0.0" green="0.32156862749999998" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="vK5-I3-TVO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Login By Facebook">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginByFacebook:" destination="-1" eventType="touchUpInside" id="pF1-yh-yLr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0p-XP-cak">
+                    <rect key="frame" x="40" y="110" width="240" height="45"/>
+                    <color key="backgroundColor" red="0.81515870420000003" green="0.20270010699999999" blue="0.21885383650000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="5rn-37-tvc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Login By Google">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginByGoogle:" destination="-1" eventType="touchUpInside" id="zr6-r1-aU6"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6f5-Gb-xUD">
+                    <rect key="frame" x="40" y="180" width="240" height="45"/>
+                    <color key="backgroundColor" red="0.2901960784" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="sLC-eH-U6h"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Login By Twitter">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="loginByTwitter:" destination="-1" eventType="touchUpInside" id="DOr-Kf-czU"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6f5-Gb-xUD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="0uh-XH-NWL"/>
+                <constraint firstItem="L0p-XP-cak" firstAttribute="top" secondItem="7jT-XI-lnZ" secondAttribute="bottom" constant="25" id="6VG-qC-hqX"/>
+                <constraint firstItem="L0p-XP-cak" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="HFi-Ew-0DQ"/>
+                <constraint firstItem="6f5-Gb-xUD" firstAttribute="top" secondItem="L0p-XP-cak" secondAttribute="bottom" constant="25" id="WqX-Yh-t2r"/>
+                <constraint firstAttribute="trailing" secondItem="6f5-Gb-xUD" secondAttribute="trailing" constant="40" id="fH9-So-36L"/>
+                <constraint firstAttribute="trailing" secondItem="7jT-XI-lnZ" secondAttribute="trailing" constant="40" id="iLf-XT-swv"/>
+                <constraint firstItem="7jT-XI-lnZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="qcg-bM-sFK"/>
+                <constraint firstAttribute="trailing" secondItem="L0p-XP-cak" secondAttribute="trailing" constant="40" id="rUn-4M-EOY"/>
+                <constraint firstItem="7jT-XI-lnZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="40" id="sD4-HZ-muL"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

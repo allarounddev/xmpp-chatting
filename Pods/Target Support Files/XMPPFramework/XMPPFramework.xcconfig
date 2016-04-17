@@ -1,0 +1,13 @@
+CONFIGURATION_BUILD_DIR = $PODS_SHARED_BUILD_DIR/XMPPFramework
+ENABLE_BITCODE = NO
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_SHARED_BUILD_DIR/CocoaAsyncSocket" "$PODS_SHARED_BUILD_DIR/CocoaLumberjack" "$PODS_SHARED_BUILD_DIR/KissXML"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/Fabric" "${PODS_ROOT}/Headers/Public/GoogleAppUtilities" "${PODS_ROOT}/Headers/Public/GoogleAuthUtilities" "${PODS_ROOT}/Headers/Public/GoogleIdentityToolkit" "${PODS_ROOT}/Headers/Public/GoogleNetworkingUtilities" "${PODS_ROOT}/Headers/Public/GoogleParsingUtilities" "${PODS_ROOT}/Headers/Public/GoogleSignIn" "${PODS_ROOT}/Headers/Public/GoogleSymbolUtilities" "${PODS_ROOT}/Headers/Public/GoogleUtilities" "${PODS_ROOT}/Headers/Public/TwitterCore" "${PODS_ROOT}/Headers/Public/TwitterKit" $(inherited) $(SDKROOT)/usr/include/libxml2 $(PODS_ROOT)/KissXML/libxml $(SDKROOT)/usr/include/libresolv
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/XMPPFramework/Vendor/libidn" "$(PODS_ROOT)/XMPPFramework/Vendor/libidn"
+OTHER_CFLAGS = $(inherited) -DDDXML_LIBXML_MODULE_ENABLED=1
+OTHER_LDFLAGS = -l"idn" -l"resolv" -l"xml2" -framework "CoreData" -framework "CoreLocation" -framework "Foundation" -framework "SystemConfiguration" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -DDDXML_LIBXML_MODULE_ENABLED
+PODS_ROOT = ${SRCROOT}
+PODS_SHARED_BUILD_DIR = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
